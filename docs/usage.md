@@ -21,8 +21,8 @@
     │   │   │     ├── evaluation            # 模型评估
     │   │   │     ├── exception             # 自定义异常处理
     │   │   │     ├── middleware            # 中间件特定功能
-    │   │   │     │     ├── auth            # 缓存逻辑
-    │   │   │     │     ├── cache           # 认证机制
+    │   │   │     │     ├── auth            # 认证机制
+    │   │   │     │     ├── cache           # 缓存逻辑
     │   │   │     │     └── messaging       # 消息传递机制
     │   │   │     ├── server                # 服务端逻辑
     │   │   │     └── utils                 # 工具类

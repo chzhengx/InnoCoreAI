@@ -1,11 +1,9 @@
-package com.clinflash.ai.api;
+package com.group.ai.client.assistant.controller;
 
-import org.springframework.ai.chat.ChatClient;
 import org.springframework.ai.chat.ChatResponse;
 import org.springframework.ai.chat.messages.UserMessage;
 import org.springframework.ai.chat.prompt.Prompt;
 import org.springframework.ai.openai.OpenAiChatClient;
-import org.springframework.ai.openai.OpenAiChatOptions;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -14,14 +12,14 @@ import reactor.core.publisher.Flux;
 import java.util.Map;
 
 /**
- * Created by zcl on 2024/4/11.
+ * Created by zcl on 2024/4/18.
  */
 @RestController
-public class OpenAiController {
+public class AssistantController {
 
     private final OpenAiChatClient chatClient;
 
-    public OpenAiController(OpenAiChatClient chatClient) {
+    public AssistantController(OpenAiChatClient chatClient) {
         this.chatClient = chatClient;
     }
 

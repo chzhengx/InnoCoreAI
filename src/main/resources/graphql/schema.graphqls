@@ -1,0 +1,13 @@
+type Query {
+    getAnswer(question: String!): Answer
+}
+
+type Answer {
+    id: ID!
+    question: String!
+    answer: String!
+}
+
+type Mutation {
+    addAnswer(question: String!, answer: String!): Answer
+}
